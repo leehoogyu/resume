@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+.row { max-width:1200px; margin:0 auto; 
+    padding:0 10px }
+.header-outer { 
+    background:rgba(0,0,0,0.5); position:fixed; width:100%; z-index:99999;
+    transition:all 0.5s;}
+
+#header {
+    padding: 20px 0;  font-family: 'Bungee', cursive;  background: #fff;
+    position: fixed;  top: 0; left: 0; width: 100%; z-index: 9999;}
+#header h1 {font-size: 50px;color: #666666;}
+#header h1 span { font-size: 60px; color: #000; font-weight: bold; font-style: italic; }
+#header h1 {float: left;}
+#header .nav{float: right;} 
+#header .depth1 li {float: left;}
+#header .depth1 a{
+    display: block; padding: 30px 10px 10px; margin: 0 10px; font-size: 20px; color: #666;
+    border-bottom: 2px solid transparent; }
+#header .depth1 span {color: #000; font-weight: bold; font-style: italic;}
+#header .depth1 li:hover a {
+    display:inline-block; border-bottom:2px solid #666; 
+    transform: scale(1.1);}
+
+
+
+/* section 구역 */
+.article1, .article2, .article3, .article4, .article5 {height: 100vh; padding-top: 102px;}
+article h2 {font-size: 50px;  font-family: 'Bungee', cursive; padding-top: 60px; position: relative;}
+article h2 span {font-style: italic; color: #666; }
+
+.article1 {background: #333; margin-top: 100px; position: relative;}
+.article1 p {
+    font-size: 60px; color: #fff; transform: translate(-50%, -50%); 
+    left: 50%; top:50%; position: absolute; font-family: 'Bungee', cursive;
+    text-align: right; line-height: 1.5;}
+
+
+
+.article2 {position: relative; }
+.article2 img { width: 45%; border-radius: 30%; margin-top: 50px;}
+.article2 .ptext {
+    display: inline-block;  top: 50%; left: 70%;   position: absolute;
+    transform: translateY(-50%); text-align: center; font-family: 'Do Hyeon', sans-serif; }
+.article2 .ptext h3 { font-size: 80px; margin-bottom: 50px; animation: fadeInRight 0.5s both 1s;}
+.article2 .ptext p {font-size: 25px; line-height: 2; text-align: left; animation: fadeInRight 0.5s both 1.5s; }
+
+
+
+.article3{background: #888; }
+.article3 .slide-group {position: relative; top: 5vh;}
+.article3 .slide-group .slide1{
+    background: url(../img/p1.jpg) no-repeat center; background-size: cover;
+    height: 60vh; position: relative;}
+.article3 .slide-group .slide2{
+    background: url(../img/p2.jpg) no-repeat center; background-size: cover;
+    height: 60vh; position: relative;}
+.article3 .slide-group .slide3{
+    background: url(../img/p3.jpg) no-repeat center; background-size: cover;
+    height: 60vh; position: relative;}
+.article3 .slide-group .slide4{
+    background: url(../img/p4.jpg) no-repeat center; background-size: cover;
+    height: 60vh; position: relative;}
+.article3 .slide-group .slide5{
+    background: url(../img/p5.jpg) no-repeat center; background-size: cover;
+    height:60vh; position: relative;}
+.article3 .slide-group .slide-text { 
+    position: absolute; top: 10%; left: 13%; transform: translate(-50%, -50%);
+    color: #fff; font-size: 50px; font-family: 'Do Hyeon', sans-serif; 
+    border: 2px solid #fff; border-radius: 10px;}
+.article3 .slide-group .slide-text:hover { 
+    background: #fff; color: #777; border: #777;}
+.article3 .slide-group .slick-arrow{
+    position: absolute; top: 50%; transform:translateY(-50%) ; font-size: 60px;
+    color: #fff; background: none; border: none; z-index: 9999;}
+.article3 .slide-group .prev{left: -50px;}
+.article3 .slide-group .next{right: -50px;}
+.article3 .slide-group .slick-dots{
+    position: absolute; bottom: 30px; left: 50%; transform: translate(-50%);}
+.slide-group .slick-dots li {display: inline-block; margin: 0 5px;}
+.slide-group .slick-dots li button{
+    width: 100px; height: 4px; border-radius: 30%; background: rgba(#666);
+    border: none; text-indent: -9999px; overflow: hidden; outline: none;}
+.slide-group .slick-dots li.slick-active button{ background:#000}
+
+
+
+
+.skillContainer { 
+    height:calc(100% - 200px); font-size:25px; font-weight:bold;}
+.skillContainer > div {width:100%; position:relative; margin-top:0%; height:20%;  margin-left: 50px;}
+.skillContainer > div > p {
+    position:absolute; left:0; top:50%; transform:translateY(-50%) ;font-family: 'Bungee', cursive;}
+.skillContainer .score { position:absolute; left:200px; width:calc(100% - 10px); top:20px; bottom:20px; }
+.skillContainer .myscore { text-align:right;height:100%; position:relative }
+.skillContainer .myscore span {
+    position:absolute; right:5%; top:50%;transform:translateY(-50%); color: #fff;}
+.skillContainer .html .myscore {
+    background:linear-gradient(to right, #999,#777, #555, #333, #222);
+     width:0%;animation:htmlani 1s both 0s; border-radius: 50px;}
+.skillContainer .css .myscore { 
+    background:linear-gradient(to right, #999,#777, #555, #333, #222); 
+    width:0%;animation:cssani 1s both 0.5s;border-radius: 50px;}
+.skillContainer .script .myscore {
+    background:linear-gradient(to right, #999,#777, #555, #333, #222);
+     width:0%;animation:scriptani 1s both 1s;border-radius: 50px;}
+.skillContainer .jquery .myscore { 
+    background:linear-gradient(to right, #999,#777, #555, #333, #222);
+     width:0%;animation:jqueryani 1s both 1.5s;border-radius: 50px;}
+.skillContainer .react .myscore { 
+    background:linear-gradient(to right, #999,#777, #555, #333, #222);
+     animation:reactani 1s both 2s;border-radius: 50px;}
+@keyframes htmlani {
+    0% { width:0%; opacity:0 }
+    100% { width:80%; opacity:1 }
+}    
+@keyframes cssani {
+    0% { width:0%; opacity:0 }
+    100% { width:70%; opacity:1 }
+} 
+@keyframes scriptani {
+    0% { width:0%; opacity:0 }
+    100% { width:50%; opacity:1 }
+} 
+@keyframes jqueryani {
+    0% { width:0%; opacity:0 }
+    100% { width:60%; opacity:1 }
+} 
+@keyframes reactani {
+    0% { width:0%; opacity:0 }
+    100% { width:30%; opacity:1 }
+} 
+
+
+
+
+#contactme form { width:60%; margin:100px auto 0 ; }
+#contactme p { 
+    padding:15px 0 ; font-size: 20px; font-family: 'Do Hyeon', sans-serif;}
+#contactme label { 
+    width:19%; display:inline-block; vertical-align:middle ;}
+#contactme p:nth-child(4) label { vertical-align:top; }
+#contactme input { width:80%; padding:10px 10px; border:1px solid #999; vertical-align:middle }
+#contactme textarea { width:80%; padding:10px 10px; border:1px solid #999;
+    height:150px; vertical-align:middle
+}
+#contactme input[type=file] { border:none; padding-left:0; }
+#contactme p:nth-child(6) {
+    text-align:center; 
+}
+#contactme button { 
+    padding:10px 20px; margin:50px 10px 0;
+    border-radius:5px; color:#fff;
+    font-size:20px;
+}
+#contactme button[type=submit] {
+    background:#333
+}
+#contactme button[type=reset] {
+    background:#333}
