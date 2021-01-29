@@ -159,3 +159,12 @@ article h2 span {font-style: italic; color: #666; }
 }
 #contactme button[type=reset] {
     background:#333}
+
+
+
+/* footer 구역 */
+
+#footer .contact {background: #333; text-align: center;}
+#footer .contact a {
+    font-size: 30px;  display: inline-block; margin: 30px; color: #fff; opacity: 0.8;}
+#footer .contact a:hover  {transform: scale(1.2); opacity: 1;}
