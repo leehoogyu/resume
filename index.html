@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
 </head>
 <body>
     <div id="wrap">
@@ -33,14 +35,14 @@
             </div>
         </header>
 
-        <section id="section">
+        <section id="section" >
             <div class="main">
-                <article class="article1" id="home">
+                <article class="article article1" id="home">
                     <div class="row">
                         <p>Thank you for visiting this page.</p>
                     </div>
                 </article>
-                <article class="article2 row" id="aboutme">
+                <article class="article article2 row" id="aboutme">
                     <h2>About <span>Me</span></h2>
                     <div class="profile">
                         <img src="./img/1.jpg" alt="">
@@ -55,7 +57,7 @@
                         
                     </div>
                 </article>
-                <article class="article3" id="portfolio">
+                <article class="article article3" id="portfolio">
                     <div class="row">
                         <h2>Portfolios</h2>
                         <div class="slide-group">
@@ -87,7 +89,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="article4" id="skills">
+                <article class="article article4" id="skills">
                     <div class="skillContainer row">
                         <h2>Skills</h2>
                         <div class="html">
@@ -122,7 +124,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="article5" id="contactme">
+                <article class="article article5" id="contactme">
                     <div class="row">
                         <h2>Contact <span>Me</span></h2>
                         <form action="#입력내용받을주소" method="post">
@@ -154,41 +156,24 @@
                     </div>
                 </article>
             </div>
+            <footer id="footer">
+                <div class="contact">
+                    <div class="row">
+                        <a href="tel:010-2599-9582"><i class="fas fa-phone"></i><span class="blind">전화걸기</span></a>
+                        <a href="#none"><i class="fab fa-instagram"></i><span class="blind">인스타</span></a>
+                        <a href="hkrhee11@naver.com"><i class="fas fa-at"></i><span class="blind">이메일</span></a>
+                    </div>
+                </div>
+            </footer>
         </section>
 
 
-        <footer id="footer">
-            <div class="contact">
-                <div class="row">
-                    <a href="tel:010-2599-9582"><i class="fas fa-phone"></i><span class="blind">전화걸기</span></a>
-                    <a href="#none"><i class="fab fa-instagram"></i><span class="blind">인스타</span></a>
-                    <a href="hkrhee11@naver.com"><i class="fas fa-at"></i><span class="blind">이메일</span></a>
-                </div>
-            </div>
-        </footer>
+        
     </div>
     
 
-    <script>
-        $(".article3 .slide-group").slick({
-            autoplay: true, // 자동재생
-            autoplaySpeed: 3000, // 간격시간
-            dots: true, // 동그라미버튼
-            speed: 600, // 바뀌는시간(생략가능)
-            slidesToShow: 1, // 보여질슬라이드수(생략가능)
-            slidesToScroll: 1, // 이동슬라이드수(생략가능)
-            pauseOnHover: true, // 마우스오버시 멈춤여부(생략가능)
-            pauseOnDotsHover: true, // 동그라미번호버튼에 호버시 멈춤여부(생략가능)
-            pauseOnFocus: false, // 동그라미번호버튼 클릭시 자동실행 멈춤여부
-            cssEase: 'linear', // 속도함수(생략가능)
-            draggable: true, // 마우스드래그시 슬라이드 략교체가능여부(생가능)
-            fade: true, // 슬라이드가 수평으로 이동하지 않고, 제자리에서 사라지고 나타남(생략가능)
-            arrows: true, // 좌우화살표 사용여부(생략가능)
-            prevArrow: '<button class="prev"><i class="fas fa-angle-left"></i></button>',
-            nextArrow: '<button class="next"><i class="fas fa-angle-right"></i></button>',
-        })
-    </script>
-
+    
+    <script src="js/index.js"></script>
 
 </body>
 </html>
